@@ -1,0 +1,75 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: #232323;
+  background-color: #f8f9fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+#app {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Hide scrollbars for sidebar, for minimalism */
+aside::-webkit-scrollbar,
+nav::-webkit-scrollbar {
+  width: 0 !important;
+}
+aside, nav {
+  scrollbar-width: none;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Placeholder color for input/textarea */
+input::placeholder, textarea::placeholder {
+  color: #a6a7ab;
+  opacity: 1;
+}
+
+/* Misc */
+@media (max-width: 1000px) {
+  #app {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 720px) {
+  aside {
+    min-width: 48vw !important;
+    width: 55vw !important;
+    max-width: 95vw !important;
+  }
+}
+
+@media (max-width: 520px) {
+  aside {
+    min-width: 92vw !important;
+    width: 100vw !important;
+    max-width: unset !important;
+  }
+  main > div {
+    padding: 0.8rem !important;
+  }
+}
